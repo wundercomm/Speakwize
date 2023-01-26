@@ -26,7 +26,7 @@ const register = async () => {
         <div class="absolute">
             <h1 class="mt-6 text-3xl font-extrabold text-white text-center">Register</h1>
             <div class="w-full max-w-xs">
-                <p class="description text-white font-mono text-xs">Welcome to our platform, please create your account by providing your email and a password. With your account you will be able to access exclusive content and personalized features. Register now and enjoy all the benefits of being part of our community.</p>
+                <p class="description text-white font-mono text-xs">Create an account on our platform by entering your email and password to access exclusive content and personalized features. Join our community now.</p>
                 <form @submit.prevent="register" class="bg-white shadow-md rounded-2xl px-6 pt-4 pb-8 mb-4 mt-2">
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="email">

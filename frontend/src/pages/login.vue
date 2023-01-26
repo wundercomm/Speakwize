@@ -27,7 +27,7 @@ const login = async () => {
         <div class="absolute">
             <h1 class="mt-6 text-3xl font-extrabold text-white text-center ">Login</h1>
             <div class="w-full max-w-xs mt-2">
-                <p class="description text-white font-mono text-xs">Welcome to our platform, please sign in with your email and password. If you don't have an account yet, sign up to access exclusive content and personalized features.</p>
+                <p class="description text-white font-mono text-xs">Sign in or create an account to access exclusive content and personalized features.</p>
                 <form @submit.prevent="login" class="bg-white shadow-md rounded-2xl px-6 pt-4 pb-8 mb-4 mt-2">
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
