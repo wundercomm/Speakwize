@@ -105,3 +105,4 @@ dist
 
 frontend/wrangler.toml
 frontend/.output
+frontend/node_modules

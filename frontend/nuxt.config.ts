@@ -9,4 +9,8 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    supabase: {
+        url: "https://aokitcbsebxnwfozpvvc.supabase.co",
+        key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFva2l0Y2JzZWJ4bndmb3pwdnZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzI3ODI4MDAsImV4cCI6MTk4ODM1ODgwMH0.X9aT8FNsKpWeE7fKdFXOopmzd5SiaK3RoxVUUl46MCM"
+    },
 })
