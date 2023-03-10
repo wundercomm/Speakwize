@@ -51,4 +51,5 @@ const user = useSupabaseUser()
     </div>
   </div>
   <NuxtPage />
+  <TheFooter />
 </template>

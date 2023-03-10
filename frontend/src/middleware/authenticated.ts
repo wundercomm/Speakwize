@@ -4,7 +4,4 @@ export default defineNuxtRouteMiddleware(() => {
         console.log('user is not authenticated')
         return navigateTo('/login')
     }
-    if(SUPABASE_KEY){
-        console.log('supabase key is present')
-    }
 });
