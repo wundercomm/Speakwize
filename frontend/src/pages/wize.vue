@@ -22,7 +22,7 @@ const podcasts = [
         audioSrc: 'https://www.ivoox.com/coffee-break-podcast-ep01_mf_4553108_feed_1.mp3'
     },
     {
-        title: 'Otro podcast',
+        title: 'Coffee Break Podcast Ep02',
         description: 'La tertulia semanal en la que nos echamos unas risas mientras repasamos las \u00faltimas noticias de la actualidad cient\u00edfica. En el episodio de hoy: Gravedad arcoiris y relatividad cu\u00e1ntica; materia oscura frente a energ\u00eda oscura; vida extraterrestre y \u00bfmarcianitos de secano? En la foto, de izquierda a derecha: Joserra Ar\u00e9valo, Alfred Rosenberg, Nayra Rodr\u00edguez Eugenio, Antonio Darwich, H\u00e9ctor Socas.',
         link: 'https://www.ivoox.com/4553122',
         audioSrc: 'https://www.ivoox.com/coffee-break-podcast-ep02_mf_4553122_feed_1.mp3'
@@ -35,11 +35,9 @@ const podcasts = [
     <div class="flex h-screen items-center justify-center bg-background-color">
         <div class="absolute mx-auto max-w-2xl">
             <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
-                <a :href="podcasts[0].link">{{ podcasts[0].title }}</a>
+                We are working on...<br><br>
+                <Icon class="text-7xl" name="mdi:account-hard-hat" />
             </h1>
-            <p class="text-foreground-color font-mono text-xl my-8 mx-8 p-8">
-                {{ podcasts[0].description }}
-            </p>
         </div>
         <div class="w-full absolute bottom-0 text-3xl font-extrabold ">
             <audio controls autoplay="true" controlsList="download" class="w-full">
