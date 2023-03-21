@@ -44,7 +44,6 @@ const podcasts = [
                 <source :src="podcasts[0].audioSrc" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
-
         </div>
     </div>
 </template>

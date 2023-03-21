@@ -35,7 +35,7 @@ const logout = async () => {
         </NuxtLink>
       </div>
       <NuxtLink to="/">
-        <button class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
+        <button @click="showProtected = false" class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
           <span class="self-center text-l font-semibold text-white">
             <Icon class="text-3xl" name="mdi:home" />
           </span>
@@ -59,7 +59,7 @@ const logout = async () => {
       </template>
       <template v-else>
         <NuxtLink to="/protected">
-          <button @click="showProtected = !showProtected" class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
+          <button @click="showProtected = true" class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
             <span class="self-center text-l font-semibold text-white">
               <Icon class="text-3xl" name="mdi:headphones" />
             </span>
@@ -67,19 +67,26 @@ const logout = async () => {
         </NuxtLink>
         <template v-if="showProtected">
           <NuxtLink to="/ep1">
-            <button class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
+            <button class="px-2 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900 ml-10">
               <span class="self-center text-l font-semibold text-white">
-                Button EP1
+                EP1
               </span>
             </button>
           </NuxtLink>
           <NuxtLink to="/ep2">
-            <button class="px-2 py-1 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
+            <button class="px-2 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900 ml-10">
               <span class="self-center text-l font-semibold text-white">
-                Button EP2
+                EP2
               </span>
             </button>
           </NuxtLink>
+          <!-- <NuxtLink to="/ep2">
+            <button class="px-3 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900">
+              <span class="self-center text-xl font-semibold text-white">
+                EP2
+              </span>
+            </button>
+          </NuxtLink> -->
         </template>
 
         <NuxtLink to="/wize">
@@ -89,7 +96,7 @@ const logout = async () => {
             </span>
           </button>
         </NuxtLink>
-        <div class="py-72">
+        <div class="py-52">
           <button @click="logout" class="px-2 text-white bg-toolbar-background-color mb-2 hover:bg-blue-700">
               <span class="self-center text-l font-semibold text-white">
                 <Icon class="text-3xl" name="mdi:logout" />
