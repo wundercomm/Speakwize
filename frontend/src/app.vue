@@ -66,27 +66,20 @@ const logout = async () => {
           </button>
         </NuxtLink>
         <template v-if="showProtected">
-          <NuxtLink to="/ep1">
-            <button class="px-2 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900 ml-10">
+          <button class="px-2 py-1 text-white bg-green-bg mb-2 hover:bg-teal-900 ml-10 rounded-full">
+              <NuxtLink to="/ep1">
               <span class="self-center text-l font-semibold text-white">
-                EP1
+                Ep1
               </span>
+            </NuxtLink>
             </button>
-          </NuxtLink>
-          <NuxtLink to="/ep2">
-            <button class="px-2 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900 ml-10">
+          <button class="px-2 py-1 text-white bg-green-bg mb-2 hover:bg-teal-900 ml-10 rounded-full">
+              <NuxtLink to="/ep2">
               <span class="self-center text-l font-semibold text-white">
-                EP2
+                Ep2
               </span>
+            </NuxtLink>
             </button>
-          </NuxtLink>
-          <!-- <NuxtLink to="/ep2">
-            <button class="px-3 py-1 text-white bg-teal-700 mb-2 hover:bg-teal-900">
-              <span class="self-center text-xl font-semibold text-white">
-                EP2
-              </span>
-            </button>
-          </NuxtLink> -->
         </template>
 
         <NuxtLink to="/wize">
