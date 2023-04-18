@@ -44,6 +44,9 @@ jobs:
         run: npm run build
         env:
           NITRO_PRESET: cloudflare
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          NODE_VERSION: ${{ vars.NODE_VERSION }}
         working-directory: frontend  # Update the working directory
 
       - name: Publish to Cloudflare
@@ -51,3 +54,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: frontend  # Update the working directory for the Wrangler action
+        env:
+          NITRO_PRESET: cloudflare
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          NODE_VERSION: ${{ vars.NODE_VERSION }}
