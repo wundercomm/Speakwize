@@ -4,7 +4,6 @@ workers_dev = true
 compatibility_date = "2023-02-06"
 account_id = "87df8b124af0483e66a3140994be83fc"
 # route = ""
-workers_dev = true
 
 [site]
 bucket = ".output/public"
