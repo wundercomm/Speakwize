@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundColor: {
         'background-color': '#282a36',
-        'toolbar-background-color': '#44475A'
+        'toolbar-background-color': '#44475A',
+        'green-bg': "#50FA7B"
       },
       textColor: {
         'foreground-color': '#f8f8f2'
