@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 definePageMeta({
     middleware: 'authenticated'
 });
@@ -74,15 +74,4 @@ audio::-webkit-media-controls-time-remaining-display {
     font-weight: 600;
     text-shadow: none;
     color: #f8f8f2;
-}</style> -->
-
-<template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
-        <div class="absolute mx-auto max-w-2xl">
-            <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
-                choose an episode for magic <Icon name="mdi:auto-fix"/> <br><br>
-                <Icon class="text-7xl" name="mdi:music-box-multiple" />
-            </h1>
-        </div>
-    </div>
-</template>
+}</style>

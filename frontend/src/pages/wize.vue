@@ -1,4 +1,4 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 definePageMeta({
     middleware: 'authenticated'
 });
@@ -28,25 +28,44 @@ const podcasts = [
         audioSrc: 'https://www.ivoox.com/coffee-break-podcast-ep02_mf_4553122_feed_1.mp3'
     },
 ];
-
 </script>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import ChatWindow from '@/components/ChatWindow.vue'
+
+export default defineComponent({
+    components: {
+        ChatWindow
+    }
+})
+</script>
+
 
 <template>
     <div class="flex h-screen items-center justify-center bg-background-color">
-        <div class="absolute mx-auto max-w-2xl">
-            <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
-                <a :href="podcasts[0].link">{{ podcasts[0].title }}</a>
-            </h1>
-            <p class="text-foreground-color font-mono text-xl my-8 mx-8 p-8">
-                {{ podcasts[0].description }}
-            </p>
+        <div class="flex-1 w-1/2 h-full">
+            <div class="mx-auto max-w-2xl">
+                <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
+                    We are working on...<br><br>
+                    <Icon class="text-7xl" name="mdi:account-hard-hat" />
+                </h1>
+            </div>
         </div>
+        <div class="flex-1 w-1/2 h-full">
+            <h1 class="mt-10 text-3xl font-extrabold text-white text-center">ChatWize
+                <Icon class="text-5xl" name="mdi:chat-question-outline" />
+            </h1>
+            <ChatWindow />
+        </div>
+
+
+        <!-- PlayerJS -->
         <div class="w-full absolute bottom-0 text-3xl font-extrabold ">
             <audio controls autoplay="true" controlsList="download" class="w-full">
                 <source :src="podcasts[0].audioSrc" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
-
         </div>
     </div>
 </template>
@@ -74,15 +93,5 @@ audio::-webkit-media-controls-time-remaining-display {
     font-weight: 600;
     text-shadow: none;
     color: #f8f8f2;
-}</style> -->
-
-<template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
-        <div class="absolute mx-auto max-w-2xl">
-            <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
-                choose an episode for magic <Icon name="mdi:auto-fix"/> <br><br>
-                <Icon class="text-7xl" name="mdi:music-box-multiple" />
-            </h1>
-        </div>
-    </div>
-</template>
+}
+</style>
