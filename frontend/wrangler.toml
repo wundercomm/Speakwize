@@ -1,0 +1,12 @@
+name = "speakwize"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2023-02-06"
+account_id = "87df8b124af0483e66a3140994be83fc"
+# route = ""
+
+[site]
+bucket = ".output/public"
+
+[env.dev]
+name = "speakwize-dev"

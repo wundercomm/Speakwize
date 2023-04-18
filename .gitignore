@@ -103,6 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-frontend/wrangler.toml
+#frontend/wrangler.toml
 frontend/.output
 frontend/node_modules
