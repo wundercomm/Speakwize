@@ -8,17 +8,15 @@ account_id = "87df8b124af0483e66a3140994be83fc"
 [site]
 bucket = ".output/public"
 
-[env]
-vars = {
-  SUPABASE_KEY = "${SUPABASE_KEY}",
-  SUPABASE_URL = "${SUPABASE_URL}",
-  NODE_VERSION = "${NODE_VERSION}"
-}
-
 [env.dev]
 name = "speakwize-dev"
-vars = {
-  SUPABASE_KEY = "${SUPABASE_KEY}",
-  SUPABASE_URL = "${SUPABASE_URL}",
-  NODE_VERSION = "${NODE_VERSION}"
-}
+
+[vars]
+SUPABASE_KEY = "${SUPABASE_KEY}"
+SUPABASE_URL = "${SUPABASE_URL}
+NODE_VERSION = "${NODE_VERSION}"
+
+[vars.dev]
+SUPABASE_KEY = "${DEV_SUPABASE_KEY}"
+SUPABASE_URL = "${DEV_SUPABASE_URL}
+NODE_VERSION = "${NODE_VERSION}"
