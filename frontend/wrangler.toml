@@ -12,6 +12,5 @@ bucket = ".output/public"
 name = "speakwize-dev"
 
 [vars]
-SUPABASE_KEY = "env.SUPABASE_KEY"
-SUPABASE_URL = "env.SUPABASE_URL"
-NODE_VERSION = "env.NODE_VERSION"
+SUPABASE_URL="https://aokitcbsebxnwfozpvvc.supabase.co"
+NODE_VERSION="19"
