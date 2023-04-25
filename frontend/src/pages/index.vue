@@ -6,7 +6,7 @@
             </h1>
             <p class="text-foreground-color text-center font-mono text-justify  text-xl my-8 mx-8 p-8">SpeakWize is an intuitive podcast app that brings the power of speech recognition to your fingertips. With SpeakWize, you can automatically generate summaries, search for specific keywords in the audio, identify speaker diarisation, and easily export your transcripts to other applications. Make podcasting easier and more efficient with SpeakWize!</p>
             <div class="container flex flex-col justify-center items-center">
-                <NuxtLink to="/" class="mt-4">
+                <NuxtLink to="/subscribe" class="mt-4">
                     <button class="dark:bg-gray-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4">
                         Apply for early access <Icon name="mdi:clipboard-text-clock" />
                     </button>
