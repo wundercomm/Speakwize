@@ -32,7 +32,7 @@ const podcasts = [
 </script>
 
 <template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
+    <div class="flex h-screen items-center justify-center bg-gradient">
         <div class="absolute mx-auto max-w-2xl">
             <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
                 <a :href="podcasts[0].link">{{ podcasts[0].title }}</a>

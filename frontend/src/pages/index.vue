@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
+    <div class="flex h-screen items-center justify-center bg-gradient">
         <div class="w-1/2 text-left">
             <h1 class="mt-6 text-3xl font-extrabold text-foreground-color text-center text-8xl">
                 SpeakWize<Icon name="mdi:google-podcast" />

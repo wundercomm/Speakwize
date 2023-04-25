@@ -43,7 +43,7 @@ export default defineComponent({
 
 
 <template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
+    <div class="flex h-screen items-center justify-center bg-gradient">
         <div class="flex-1 w-1/2 h-full">
             <div class="mx-auto max-w-2xl">
                 <h1 class="mt-10 text-3xl font-extrabold text-white text-center">

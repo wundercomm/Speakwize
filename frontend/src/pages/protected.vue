@@ -77,7 +77,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }</style> -->
 
 <template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
+    <div class="flex h-screen items-center justify-center bg-gradient">
         <div class="absolute mx-auto max-w-2xl">
             <h1 class="mt-10 text-3xl font-extrabold text-white text-center">
                 choose an episode for magic <Icon name="mdi:auto-fix"/> <br><br>
