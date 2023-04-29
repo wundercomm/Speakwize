@@ -23,7 +23,7 @@ const login = async () => {
 </script>
 
 <template>
-    <div class="flex h-screen items-center justify-center bg-background-color">
+    <div class="flex h-screen items-center justify-center bg-gradient">
         <div class="absolute">
             <h1 class="mt-6 text-3xl font-extrabold text-white text-center ">Login</h1>
             <div class="w-full max-w-xs mt-2">
