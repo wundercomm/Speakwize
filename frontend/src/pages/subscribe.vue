@@ -54,4 +54,5 @@ async function suscribeToNewsletter() {
                 </form>
             </div>
         </div>
-    </div></template>
+    </div>
+</template>
