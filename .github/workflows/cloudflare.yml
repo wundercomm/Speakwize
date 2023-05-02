@@ -54,10 +54,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: frontend  # Update the working directory for the Wrangler action
-          secrets: |
-            SUPABASE_KEY
-            SUPABASE_URL
-            NODE_VERSION
+          environment: 'production'
         env:
           NITRO_PRESET: cloudflare
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
