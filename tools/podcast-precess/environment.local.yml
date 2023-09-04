@@ -1,0 +1,14 @@
+name: OpenAIWhisper
+channels:
+  - conda-forge
+dependencies:
+  - ffmpeg
+  - python
+  - youtube-dl
+  - pip
+  - ipython
+  - jupyter
+  - google-colab
+  - pandas
+  - pip:
+    - git+https://github.com/openai/whisper.git 
