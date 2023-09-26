@@ -1,10 +1,9 @@
-name: OpenAIWhisper
+name: Speakwize
 channels:
   - conda-forge
 dependencies:
   - ffmpeg
   - python
-  - youtube-dl
   - pip
   - ipython
   - jupyter
@@ -12,3 +11,4 @@ dependencies:
   - pandas
   - pip:
     - git+https://github.com/openai/whisper.git 
+    - yt-dlpl
