@@ -10,6 +10,6 @@ dependencies:
   - google-colab
   - pandas
   - pip:
-    - yt-dlpl
+    - yt-dlp
     - git+https://github.com/m-bain/whisperx.git
     - supabase
