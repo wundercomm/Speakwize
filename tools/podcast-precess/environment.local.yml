@@ -10,5 +10,6 @@ dependencies:
   - google-colab
   - pandas
   - pip:
-    - git+https://github.com/openai/whisper.git 
     - yt-dlpl
+    - git+https://github.com/m-bain/whisperx.git
+    - supabase
